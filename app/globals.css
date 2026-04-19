@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --gold-highlight: #fceea3;
+  --gold-mid: #e8c547;
+  --gold-deep: #b8941f;
+  --hero-green: #1a4d2e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, #fff4c2 0%, #f0d060 35%, #d4a82a 100%);
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  color: #1a1a1a;
+}
+
+.btn-gold:hover {
+  filter: brightness(1.05);
+}
+
+.font-bebas {
+  font-family: var(--font-bebas), system-ui, sans-serif;
+}
+
+.font-kaushan {
+  font-family: var(--font-kaushan), cursive;
+}
